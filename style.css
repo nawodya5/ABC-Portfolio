@@ -23,6 +23,8 @@ html {
     background-position: center;
 }
 
+
+
 .container {
     padding: 10px 10%;
 
@@ -33,7 +35,16 @@ nav {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    padding: 15px 10%;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.8);
 }
+
+
 
 .logo {
     width: 100px;
@@ -81,6 +92,12 @@ header-text h1 {
     font-size: 60px;
     margin-top: 20px;
 }
+
+.header-text h1 span {
+    color: #00ffc8;
+}
+
+/* about */
 
 #about {
     padding: 80px 0;
@@ -135,7 +152,7 @@ header-text h1 {
     content: '';
     width: 0;
     height: 3px;
-    background: #ff004f;
+    background: #00ffc8;
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -153,8 +170,9 @@ header-text h1 {
 }
 
 .tab-contents ul li span {
-    color: #b54769;
-    font-size: 14px;
+    color: #0a987c;
+    font-size: 24px;
+
 }
 
 .tab-contents {
@@ -163,7 +181,9 @@ header-text h1 {
 
 .tab-contents.active-tab {
     display: block;
+
 }
+
 
 
 #services {
@@ -210,8 +230,10 @@ header-text h1 {
 }
 
 .services-list div:hover {
-    background: #ff004f;
+    background: #00ffc8;
     transform: translateY(-10px);
+    color: #080808;
+    font-weight: 800;
 }
 
 
@@ -247,7 +269,7 @@ header-text h1 {
 .layer {
     width: 100%;
     height: 0;
-    background-color: linear-gradient(rgba(0, 0, 0, 0.6) #ff004f);
+    background-color: linear-gradient(rgba(0, 0, 0, 0.6) #00ffc8);
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -271,7 +293,7 @@ header-text h1 {
 
 .layer a {
     margin-top: 20px;
-    color: #ff004f;
+    color: #00ffc8;
     text-decoration: none;
     font-size: 18px;
     line-height: 60px;
@@ -289,14 +311,14 @@ header-text h1 {
 .work:hover .layer {
     height: 100%;
     background: rgb(226, 80, 61);
-    background: linear-gradient(180deg, rgba(226, 80, 61, 0.6083683473389356) 0%, rgba(0, 0, 0, 0.8688725490196079) 100%);
+    background: linear-gradient(180deg, rgba(61, 226, 207, 0.608) 0%, rgba(0, 0, 0, 0.8688725490196079) 100%);
 }
 
 .btn {
     display: block;
     margin: 50px auto;
     width: fit-content;
-    border: 1px solid #ff004f;
+    border: 1px solid #00ffc8;
     padding: 14px 50px;
     border-radius: 6px;
     text-decoration: none;
@@ -305,7 +327,9 @@ header-text h1 {
 }
 
 .btn:hover {
-    background: #ff004f;
+    background: #00ffc8;
+    color: #080808;
+    font-weight: 600;
 
 }
 
@@ -327,7 +351,7 @@ header-text h1 {
 }
 
 .contact-left p i {
-    color: #ff004f;
+    color: #00ffc8;
     margin-right: 15px;
     font-size: 25px;
 }
@@ -347,13 +371,14 @@ header-text h1 {
 }
 
 .social-icons a:hover {
-    color: #ff004f;
+    color: #00ffc8;
     transform: translateY(-5px);
 }
 
 .btn.btn2 {
     display: inline-block;
-    background: #ff004f;
+    background: #00ffc8;
+    color: #080808;
 }
 
 .contact-right form {
@@ -390,7 +415,7 @@ nav i.fa-xmark {
     display: none;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 770px) {
     .header-text {
         margin-top: 100%;
         font-size: 16px;
@@ -408,7 +433,7 @@ nav i.fa-xmark {
     }
 
     nav ul {
-        background: #ff004f;
+        background: rgba(0, 0, 0, 0.6);
         position: fixed;
         top: 0;
         right: -200px;
@@ -472,7 +497,7 @@ nav i.fa-xmark {
 
 
 #msg {
-    color: #61b752;
+    color: #00ffc8;
     margin-top: -40px;
     display: block;
 }

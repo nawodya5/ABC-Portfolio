@@ -10,24 +10,27 @@
 </head>
 
 <body>
-    <div id="header">
+    <!-- style="position: absolute;width: 100%;" -->
+    <div id="header" class="header">
         <div class="container">
             <nav>
-                <img src="Images/feather-pen-2.png" alt="logo" class="logo">
-                <ul id="sidemenu">
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
-                </ul>
+                <div class="nav-img"><img src="Images/feather-pen-2.png" alt="logo" class="logo"></div>
+                <div class="nav-links">
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                    </ul>
+                </div>
                 <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
 
             <div class="header-text">
                 <p>Web Developer</p>
-                <h1>Hi, I'm Dulaj </h1>
+                <h1>Hi, I'm <span>Dulaj</span> <br>Nawodya</h1>
             </div>
         </div>
     </div>
@@ -41,33 +44,34 @@
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
-                    <p>skdjbfjksdjkfnsdnfjmnsdjkfnjksdnfndskfnsdjknfjkksjdnfjdnjfnsjn</p>
+                    <p>I am a recent Information and Communication
+                        Technology undergraduate with a passion for developing
+                        scalable web applications and working across the full
+                        stack. I am looking to join forces with Red Technologies
+                        to continue to grow my skill set while contributing to the
+                        positive outcome of making people "richer, smarter, and
+                        happier."
+                    </p>
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
                         <p class="tab-links" onclick="opentab('education')">Education</p>
                     </div>
                     <div class="tab-contents active-tab" id="skills">
                         <ul>
-                            <li><span>Front End Developer</span><br>HTML/CSS/JavaScript/React</li>
+                            <li><span class="bb">Front End Developer</span><br>HTML/CSS/JavaScript/React</li>
                             <li><span>Back End Developer</span><br>NodeJs/ExpressJs/MySQl/MongoDB</li>
                             <li><span>App Developer</span><br>Flutter</li>
                         </ul>
                     </div>
-
-                    <div class="tab-contents" id="experience">
-                        <ul>
-                            <li><span>Front End Devsssssssddeloper</span><br>HTML/CSS/JavaScript/React</li>
-                            <li><span>Back End Developer</span><br>NodeJs/ExpressJs/MySQl/MongoDB</li>
-                            <li><span>App Developer</span><br>Flutter</li>
-                        </ul>
-                    </div>
+                    
 
                     <div class="tab-contents" id="education">
                         <ul>
-                            <li><span>Front End Developer</span><br>HTML/CSS/JavaScript/React</li>
-                            <li><span>Back End Deveddddddddloper</span><br>NodeJs/ExpressJs/MySQl/MongoDB</li>
-                            <li><span>App Developer</span><br>Flutter</li>
+                            <li><span>Bachelor of Information and Communication Technologie</span><br>University of
+                                Colombo (ug)</li>
+                            <li><span>Developer Stack MERN Certification Course</span><br>MongoDB/ExpressJS/React/NodeJS
+                            </li>
+                            <li><span>Python for Beginners</span><br>MIHA Institute</li>
                         </ul>
                     </div>
                 </div>
@@ -85,7 +89,7 @@
                 <div>
                     <i class="fa-solid fa-code"></i>
                     <h2>Front-End Developmnet</h2>
-                    <p>udshfjds sdkfhjdsnfjkkjshdfjkjksdfjhsfhshfkhdkj sjkhdfjjdfkjskfsfks</p>
+                    <p>Front End Frameworks like React</p>
                     <a href="#">Learn More</a>
                 </div>
 
@@ -93,7 +97,7 @@
                 <div>
                     <i class="fa-solid fa-crop"></i>
                     <h2>Back-End Development</h2>
-                    <p>udshfjds sdkfhjdsnfjkkjshhsfhshfkhdkj sjkhdfjjdfkjskfsfks</p>
+                    <p>API Calling Using NodeJS</p>
                     <a href="#">Learn More</a>
                 </div>
 
@@ -101,7 +105,7 @@
                 <div>
                     <i class="fa-brands fa-app-store"></i>
                     <h2>Mobile App Development</h2>
-                    <p>udshfjds sdkfhjdsnfjkkjshdfjkjksdfj sjkhdfjjdfkjskfsfks</p>
+                    <p>App Development Using Flutter with Firebase</p>
                     <a href="#">Learn More</a>
                 </div>
             </div>
