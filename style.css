@@ -118,8 +118,9 @@ header-text h1 {
 }
 
 .about-col-1 img {
-    width: 100%;
-    border-radius: 15px;
+    width: 300px;
+    height: 400px;
+
 }
 
 .about-col-2 {
